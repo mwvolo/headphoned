@@ -11,6 +11,7 @@
 		4C1A45191BA902B900ED8EB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A45181BA902B900ED8EB1 /* Images.xcassets */; };
 		4C1A451C1BA902B900ED8EB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A451A1BA902B900ED8EB1 /* MainMenu.xib */; };
 		4C1A45281BA902B900ED8EB1 /* HeadphonedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A45271BA902B900ED8EB1 /* HeadphonedTests.swift */; };
+		4C1A45371BA9043A00ED8EB1 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A45361BA9043A00ED8EB1 /* EZAudio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,8 @@
 		4C1A45211BA902B900ED8EB1 /* HeadphonedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadphonedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1A45261BA902B900ED8EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C1A45271BA902B900ED8EB1 /* HeadphonedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphonedTests.swift; sourceTree = "<group>"; };
+		4C1A45331BA9036500ED8EB1 /* Headphoned-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Headphoned-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C1A45361BA9043A00ED8EB1 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EZAudio; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +76,11 @@
 		4C1A45131BA902B900ED8EB1 /* Headphoned */ = {
 			isa = PBXGroup;
 			children = (
+				4C1A45361BA9043A00ED8EB1 /* EZAudio */,
 				4C1A45161BA902B900ED8EB1 /* AppDelegate.swift */,
 				4C1A45181BA902B900ED8EB1 /* Images.xcassets */,
 				4C1A451A1BA902B900ED8EB1 /* MainMenu.xib */,
+				4C1A45331BA9036500ED8EB1 /* Headphoned-Bridging-Header.h */,
 				4C1A45141BA902B900ED8EB1 /* Supporting Files */,
 			);
 			path = Headphoned;
@@ -186,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1A45371BA9043A00ED8EB1 /* EZAudio in Resources */,
 				4C1A45191BA902B900ED8EB1 /* Images.xcassets in Resources */,
 				4C1A451C1BA902B900ED8EB1 /* MainMenu.xib in Resources */,
 			);
@@ -327,6 +333,7 @@
 				INFOPLIST_FILE = Headphoned/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Headphoned/Headphoned-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -338,6 +345,7 @@
 				INFOPLIST_FILE = Headphoned/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Headphoned/Headphoned-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -396,6 +404,7 @@
 				4C1A452D1BA902B900ED8EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C1A452E1BA902B900ED8EB1 /* Build configuration list for PBXNativeTarget "HeadphonedTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +413,7 @@
 				4C1A45301BA902B900ED8EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
