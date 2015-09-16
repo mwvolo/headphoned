@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43106117C4DC195D4D41B72F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 678C11317F4E184AAAA3F879 /* libPods.a */; };
 		4C1A45171BA902B900ED8EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A45161BA902B900ED8EB1 /* AppDelegate.swift */; };
 		4C1A45191BA902B900ED8EB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A45181BA902B900ED8EB1 /* Images.xcassets */; };
 		4C1A451C1BA902B900ED8EB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A451A1BA902B900ED8EB1 /* MainMenu.xib */; };
 		4C1A45281BA902B900ED8EB1 /* HeadphonedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A45271BA902B900ED8EB1 /* HeadphonedTests.swift */; };
-		4C1A45371BA9043A00ED8EB1 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A45361BA9043A00ED8EB1 /* EZAudio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01745E13F5A77DCD4AC40F92 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4C1A45111BA902B900ED8EB1 /* Headphoned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Headphoned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1A45151BA902B900ED8EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C1A45161BA902B900ED8EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +35,8 @@
 		4C1A45261BA902B900ED8EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C1A45271BA902B900ED8EB1 /* HeadphonedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphonedTests.swift; sourceTree = "<group>"; };
 		4C1A45331BA9036500ED8EB1 /* Headphoned-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Headphoned-Bridging-Header.h"; sourceTree = "<group>"; };
-		4C1A45361BA9043A00ED8EB1 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EZAudio; sourceTree = "<group>"; };
+		678C11317F4E184AAAA3F879 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD762AD65C41F37A19DAD8F4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43106117C4DC195D4D41B72F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,8 @@
 				4C1A45131BA902B900ED8EB1 /* Headphoned */,
 				4C1A45241BA902B900ED8EB1 /* HeadphonedTests */,
 				4C1A45121BA902B900ED8EB1 /* Products */,
+				ED2C20441C7A749E3472E268 /* Pods */,
+				5BA5A2EBAE3EEB1C4D6337AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +81,6 @@
 		4C1A45131BA902B900ED8EB1 /* Headphoned */ = {
 			isa = PBXGroup;
 			children = (
-				4C1A45361BA9043A00ED8EB1 /* EZAudio */,
 				4C1A45161BA902B900ED8EB1 /* AppDelegate.swift */,
 				4C1A45181BA902B900ED8EB1 /* Images.xcassets */,
 				4C1A451A1BA902B900ED8EB1 /* MainMenu.xib */,
@@ -111,6 +115,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5BA5A2EBAE3EEB1C4D6337AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				678C11317F4E184AAAA3F879 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED2C20441C7A749E3472E268 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD762AD65C41F37A19DAD8F4 /* Pods.debug.xcconfig */,
+				01745E13F5A77DCD4AC40F92 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C1A452B1BA902B900ED8EB1 /* Build configuration list for PBXNativeTarget "Headphoned" */;
 			buildPhases = (
+				049CBED40B58F9A8406E82B8 /* Check Pods Manifest.lock */,
 				4C1A450D1BA902B900ED8EB1 /* Sources */,
 				4C1A450E1BA902B900ED8EB1 /* Frameworks */,
 				4C1A450F1BA902B900ED8EB1 /* Resources */,
+				37FF64CACEDE7AA13ACEA07B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +183,7 @@
 				TargetAttributes = {
 					4C1A45101BA902B900ED8EB1 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ZJZ4ZKDB8V;
 					};
 					4C1A45201BA902B900ED8EB1 = {
 						CreatedOnToolsVersion = 6.4;
@@ -191,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A45371BA9043A00ED8EB1 /* EZAudio in Resources */,
 				4C1A45191BA902B900ED8EB1 /* Images.xcassets in Resources */,
 				4C1A451C1BA902B900ED8EB1 /* MainMenu.xib in Resources */,
 			);
@@ -205,6 +228,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		049CBED40B58F9A8406E82B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37FF64CACEDE7AA13ACEA07B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C1A450D1BA902B900ED8EB1 /* Sources */ = {
@@ -327,25 +383,43 @@
 		};
 		4C1A452C1BA902B900ED8EB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD762AD65C41F37A19DAD8F4 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Headphoned/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Headphoned/Headphoned-Bridging-Header.h";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		4C1A452D1BA902B900ED8EB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01745E13F5A77DCD4AC40F92 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Headphoned/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Headphoned/Headphoned-Bridging-Header.h";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};

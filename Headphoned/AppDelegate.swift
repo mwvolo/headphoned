@@ -11,17 +11,42 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
+    @IBOutlet weak var headphoneMenu: NSMenu!
+    @IBOutlet weak var deviceLabel: NSMenuItem!
+    
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    
+    
+    @IBAction func quitApp(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(self)
+    
+    }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        let headphoneIcon = NSImage(named: "headphoneIcon")
+        statusItem.image = headphoneIcon
+        deviceLabel.title = "Initializing..."
+        statusItem.menu = headphoneMenu
+        
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateAudio", userInfo: nil, repeats: true)
+    
     }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+    
+    @objc func updateAudio() {
+        var deviceName = EZAudioDevice.currentOutputDevice().name
+        let redHeadphones = NSImage(named: "redHeadphones")
+        let greenHeadphones = NSImage(named: "greenHeadphones")
+        
+        if deviceName == "Built-in Output" {
+            statusItem.image = greenHeadphones
+        }else{
+            statusItem.image = redHeadphones
+        }
+        
+        statusItem.menu = headphoneMenu
+        
+        deviceLabel.title = deviceName
     }
-
 
 }
 
