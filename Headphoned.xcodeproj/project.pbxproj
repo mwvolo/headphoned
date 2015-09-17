@@ -12,6 +12,7 @@
 		4C1A45191BA902B900ED8EB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A45181BA902B900ED8EB1 /* Images.xcassets */; };
 		4C1A451C1BA902B900ED8EB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A451A1BA902B900ED8EB1 /* MainMenu.xib */; };
 		4C1A45281BA902B900ED8EB1 /* HeadphonedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A45271BA902B900ED8EB1 /* HeadphonedTests.swift */; };
+		4C1A45681BAB7E3B00ED8EB1 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A45671BAB7E3B00ED8EB1 /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		4C1A45261BA902B900ED8EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C1A45271BA902B900ED8EB1 /* HeadphonedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphonedTests.swift; sourceTree = "<group>"; };
 		4C1A45331BA9036500ED8EB1 /* Headphoned-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Headphoned-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C1A45661BAA79F500ED8EB1 /* Headphoned.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Headphoned.entitlements; sourceTree = "<group>"; };
+		4C1A45671BAB7E3B00ED8EB1 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		678C11317F4E184AAAA3F879 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD762AD65C41F37A19DAD8F4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +84,8 @@
 		4C1A45131BA902B900ED8EB1 /* Headphoned */ = {
 			isa = PBXGroup;
 			children = (
+				4C1A45671BAB7E3B00ED8EB1 /* StatusMenuController.swift */,
+				4C1A45661BAA79F500ED8EB1 /* Headphoned.entitlements */,
 				4C1A45161BA902B900ED8EB1 /* AppDelegate.swift */,
 				4C1A45181BA902B900ED8EB1 /* Images.xcassets */,
 				4C1A451A1BA902B900ED8EB1 /* MainMenu.xib */,
@@ -184,6 +189,11 @@
 					4C1A45101BA902B900ED8EB1 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = ZJZ4ZKDB8V;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					4C1A45201BA902B900ED8EB1 = {
 						CreatedOnToolsVersion = 6.4;
@@ -267,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1A45681BAB7E3B00ED8EB1 /* StatusMenuController.swift in Sources */,
 				4C1A45171BA902B900ED8EB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +399,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_ENTITLEMENTS = Headphoned/Headphoned.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -409,6 +421,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_ENTITLEMENTS = Headphoned/Headphoned.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;

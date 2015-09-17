@@ -12,26 +12,29 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Headphoned" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Headphoned" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="ztE-Xy-daw" customClass="StatusMenuController" customModule="Headphoned" customModuleProvider="target">
             <connections>
-                <outlet property="deviceLabel" destination="kcv-KP-ZXX" id="fLl-Cc-RLy"/>
-                <outlet property="headphoneMenu" destination="vbg-jC-Rvd" id="nVD-5D-LZ7"/>
+                <outlet property="deviceLabel" destination="kcv-KP-ZXX" id="K9S-2e-urc"/>
+                <outlet property="headphoneMenu" destination="vbg-jC-Rvd" id="lbK-q3-H9l"/>
             </connections>
         </customObject>
-        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="vbg-jC-Rvd">
             <items>
+                <menuItem isSeparatorItem="YES" id="aHA-3f-JJV"/>
                 <menuItem title="Device" id="kcv-KP-ZXX">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="9MT-AP-mRs"/>
                 <menuItem title="Quit" id="FZA-G3-c03">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitApp:" target="Voe-Tx-rLC" id="NND-sl-fcd"/>
+                        <action selector="quitApp:" target="ztE-Xy-daw" id="lpQ-OQ-jJb"/>
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="283" y="359.5"/>
+            <point key="canvasLocation" x="282.5" y="359.5"/>
         </menu>
     </objects>
 </document>
